@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button testMbti = (Button)findViewById(R.id.testButton);
+        testMbti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent testMbtiIntent = new Intent(MainActivity.this, TestMbti.class);
+                MainActivity.this.startActivity(testMbtiIntent);
+
+            }
+        });
+
     }
 
 }
