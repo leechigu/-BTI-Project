@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/mbtiTextView"
+        android:id="@+id/mbtiInfoView"
         android:layout_width="260dp"
         android:layout_height="123dp"
         android:fontFamily="@font/fontstyle"
@@ -34,11 +34,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mbtiTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mbtiInfoView"
         app:layout_constraintVertical_bias="0.073" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/mbtiImageView"
         android:layout_width="198dp"
         android:layout_height="174dp"
         android:src="@drawable/mbtimain"

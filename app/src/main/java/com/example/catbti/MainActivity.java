@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button mbtiJobButton = findViewById(R.id.mbtiJobButton);
 
         Button explainMbti = (Button)findViewById(R.id.mbtiButton);
         explainMbti.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent testMbtiIntent = new Intent(MainActivity.this, TestMbti.class);
                 MainActivity.this.startActivity(testMbtiIntent);
 
+            }
+        });
+
+        mbtiJobButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mbtiJobIntent = new Intent(MainActivity.this, MbtiJobInfo.class);
+                MainActivity.this.startActivity(mbtiJobIntent);
             }
         });
 

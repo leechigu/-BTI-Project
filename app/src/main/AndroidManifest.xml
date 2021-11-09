@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CatBTI" >
         <activity
+            android:name=".MbtiJobInfo"
+            android:exported="false" />
+        <activity
             android:name=".TestMbti"
             android:exported="true" />
         <activity
