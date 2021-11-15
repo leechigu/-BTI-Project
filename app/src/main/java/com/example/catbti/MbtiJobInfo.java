@@ -39,6 +39,7 @@ public class MbtiJobInfo extends AppCompatActivity {
         final Button btn_istj  = (Button)findViewById(R.id.btn14);
         final Button btn_isfp  = (Button)findViewById(R.id.btn15);
         final Button btn_istp  = (Button)findViewById(R.id.btn16);
+        final ImageView image_mbti  = (ImageView)findViewById(R.id.image_mbti);
 
 
 
@@ -50,6 +51,7 @@ public class MbtiJobInfo extends AppCompatActivity {
                 info_txt.setText("ENTJ 특징 설명");
                 job_btn1.setText("공무원");
                 job_btn2.setText("의사");
+                image_mbti.setImageResource(R.drawable.enfj);
 
             }
         });
@@ -59,6 +61,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ENTP");
                 info_txt.setText("ENTP 특징 설명");
+                image_mbti.setImageResource(R.drawable.entp);
 
             }
         });
@@ -68,6 +71,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ENTJ");
                 info_txt.setText("ENTJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.entj);
             }
         });
         btn_enfp.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +79,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ENFP");
                 info_txt.setText("ENFP 특징 설명");
+                image_mbti.setImageResource(R.drawable.enfp);
             }
         });
 
@@ -83,6 +88,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("INFJ");
                 info_txt.setText("INFJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.infj);
             }
         });
 
@@ -91,6 +97,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("INTJ");
                 info_txt.setText("INTJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.intj);
             }
         });
 
@@ -99,6 +106,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("INTP");
                 info_txt.setText("INTP 특징 설명");
+                image_mbti.setImageResource(R.drawable.intp);
             }
         });
 
@@ -107,6 +115,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("INFP");
                 info_txt.setText("INFP 특징 설명");
+                image_mbti.setImageResource(R.drawable.infp);
             }
         });
 
@@ -115,6 +124,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESFJ");
                 info_txt.setText("ESFJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.esfj);
             }
         });
 
@@ -123,6 +133,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESTJ");
                 info_txt.setText("ESTJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.estj);
             }
         });
 
@@ -131,6 +142,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESFP");
                 info_txt.setText("ESFP 특징 설명");
+                image_mbti.setImageResource(R.drawable.esfp);
             }
         });
 
@@ -139,6 +151,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESTP");
                 info_txt.setText("ESTP 특징 설명");
+                image_mbti.setImageResource(R.drawable.estp);
             }
         });
 
@@ -147,6 +160,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ISFJ");
                 info_txt.setText("ISFJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.isfj);
             }
         });
 
@@ -155,22 +169,17 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ISTJ");
                 info_txt.setText("ISTJ 특징 설명");
+                image_mbti.setImageResource(R.drawable.istj);
             }
         });
 
-        btn_istj.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                title_mbti.setText("ISTJ");
-                info_txt.setText("ISTJ 특징 설명");
-            }
-        });
 
         btn_isfp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 title_mbti.setText("ISFP");
                 info_txt.setText("ISFP 특징 설명");
+                image_mbti.setImageResource(R.drawable.isfp);
             }
         });
 
@@ -179,9 +188,11 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ISTP");
                 info_txt.setText("ISTP 특징 설명");
+                image_mbti.setImageResource(R.drawable.istp);
             }
         });
 
 
     }
+
 }

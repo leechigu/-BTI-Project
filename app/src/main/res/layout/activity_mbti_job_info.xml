@@ -219,15 +219,16 @@
     <TextView
         android:id="@+id/txt2"
         android:layout_width="215dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:gravity="clip_horizontal"
         android:text="    선입견이 강하고 낯가림이 심하다. \n   지나고 난 다음에 따지는 편이다. \n   어찌고 저찌고 특징…… "
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <TextView
         android:id="@+id/txt1"
@@ -243,7 +244,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.344" />
 
     <Button
         android:id="@+id/btn17"
@@ -268,6 +269,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
+
+    <ImageView
+        android:id="@+id/image_mbti"
+        android:layout_width="223dp"
+        android:layout_height="205dp"
+        android:src="@drawable/istj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
