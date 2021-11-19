@@ -8,8 +8,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
-@Database(entities = {RegisterContent.class}, version =1)
+@Database(entities = {Post.class}, version =1)
 public abstract class AppDatabase extends RoomDatabase {
-    public abstract RegisterContentDao registerContentDao();
-
+    public abstract PostDao postDao();
 }

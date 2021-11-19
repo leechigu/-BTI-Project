@@ -26,6 +26,8 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class RegisterActivity extends AppCompatActivity {
     private EditText title_et,content_et;
+
+
     private TextView title_tv, content_tv;
 
     @Override
@@ -42,16 +44,12 @@ public class RegisterActivity extends AppCompatActivity {
                 .allowMainThreadQueries()
                 .build();
 
-        title_et.setText(db.registerContentDao().getAll().toString());
-        content_et.setText(db.registerContentDao().getAll().toString());
+        title_et.setText(db.postDao().getAll().toString());
 
         findViewById(R.id.reg_button).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                db.registerContentDao().insertRC(new RegisterContent(title_et.getText().toString(),content_et.getText().toString()));
-
-                content_tv.setText(db.registerContentDao().getAll().toString());
-
+                db.postDao().insertRC(new Post(title_et.getText().toString(),content_et.getText().toString()));
             }
         });
 

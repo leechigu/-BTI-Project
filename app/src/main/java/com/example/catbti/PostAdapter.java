@@ -5,22 +5,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.List;
 
-public class TestAdapter extends BaseAdapter {
+public class PostAdapter extends BaseAdapter {
 
-    private List<Answer> mData;
+    private List<Post> mData;
 
-    public TestAdapter(List<Answer> data) {this.mData = data;}
+    public PostAdapter(List<Post> data) {this.mData = data;}
 
-    public boolean isChecked(int position){
-        return mData.get(position).isChecked();
-
-    }
     @Override
     public int getCount() {
         return mData.size();
@@ -46,11 +41,9 @@ public class TestAdapter extends BaseAdapter {
 
         TextView answerText = convertView.findViewById(R.id.answer_text);
         RadioGroup radioGroup = convertView.findViewById(R.id.radioGroup);
-        Answer answer = mData.get(position);
-        answer.setRadioGroup(radioGroup);
-        answerText.setText(answer.getAnswer());
+        Post post = mData.get(position);
+
         return convertView;
 
     }
-
 }

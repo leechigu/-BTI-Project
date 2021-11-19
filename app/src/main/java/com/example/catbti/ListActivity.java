@@ -31,6 +31,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -39,6 +40,18 @@ public class ListActivity extends AppCompatActivity {
     private Button reg_button;
 
     protected void onCreate(Bundle savedInstanceState) {
+
+        final AppDatabase db = Room.databaseBuilder(this, AppDatabase.class, "registerContent-db")
+                .allowMainThreadQueries()
+                .build();
+
+        ArrayList<Post> data = (ArrayList<Post>) db.postDao().getAll();
+
+        ListAdapter adapter = new ListAdapter(data);
+        ListView listView = findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
@@ -54,19 +67,13 @@ public class ListActivity extends AppCompatActivity {
 
 
 
-        ArrayList<Answer> data = new ArrayList<>();
-
-        data.add(new Answer("i,e_1"));
-        data.add(new Answer("i,e_2"));
-        data.add(new Answer("i,e_3"));
-        data.add(new Answer("i,e_4"));
 
 
-        ListAdapter listAdapter = new ListAdapter(data);
-        ListView listView = findViewById(R.id.list_lv);
-        listView.setAdapter(listAdapter);
 
-        listAdapter.addList(db.registerContentDao().getAll().toString());
+        //ListAdapter listAdapter = new ListAdapter(data);
+      //  ListView listView = findViewById(R.id.list_lv);
+        //listView.setAdapter(listAdapter);
+
 
     }
 

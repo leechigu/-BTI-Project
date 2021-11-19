@@ -14,9 +14,10 @@ import java.util.List;
 
 public class ListAdapter extends BaseAdapter {
 
-    ArrayList<RegisterContent> lists = new ArrayList<>();
+    ArrayList<Post> lists;
 
-    //public ListAdapter(List<Answer> data) {this.mData = data;}
+
+    public ListAdapter(List<Post> data) {this.lists= lists;}
 
     @Override
     public int getCount() {
@@ -38,12 +39,12 @@ public class ListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         Context c = parent.getContext();
         if(convertView == null){
-            LayoutInflater li = (LayoutInflater) c.getSystemService((Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = li.inflate(R.layout.boardlist, parent, false);
         }
         TextView boardText = convertView.findViewById(R.id.board_tv);
 
-        RegisterContent l = lists.get(position);
+        Post l = lists.get(position);
 
         boardText.setText(l.getTitle());
 
@@ -51,8 +52,8 @@ public class ListAdapter extends BaseAdapter {
     }
 
     public void addList(String boardText){
-        RegisterContent l = new RegisterContent();
-        l.setTitle(boardText);
+       // Post l = new Post();
+       // l.setTitle(boardText);
     }
 
 }

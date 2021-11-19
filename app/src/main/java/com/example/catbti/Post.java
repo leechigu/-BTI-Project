@@ -8,21 +8,18 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 @Entity
-public class RegisterContent {
-
-//    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-  //  String ID = user.getEmail();
-
+public class Post {
     @PrimaryKey()
+  //    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+  //  String ID = user.getEmail();
     @NonNull
     private String title;
     private String content;
 
-    public RegisterContent(String title, String content){
+    public Post(String title, String content){
         this.title=title;
         this.content =content;
     }
-
 
     public String getTitle() {
         return title;
