@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "224789779261",
+    "project_id": "catbti",
+    "storage_bucket": "catbti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224789779261:android:6e7743b130dda1fac36b54",
+        "android_client_info": {
+          "package_name": "com.example.catbti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224789779261-1blu6q1dd1updqnm0q8l6p3krrqip8tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.catbti",
+            "certificate_hash": "d39728d8ae7d53f887f3460ef9b8d90374e6060e"
+          }
+        },
+        {
+          "client_id": "224789779261-775k5ich76mm5j6tsb6ora7p7i3icdkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx3pnyEl_5fs-UG3drWRujB94jFCIaI-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224789779261-775k5ich76mm5j6tsb6ora7p7i3icdkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
