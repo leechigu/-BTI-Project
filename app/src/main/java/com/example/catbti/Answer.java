@@ -6,7 +6,7 @@ public class Answer {
 
     private String answer;
     private RadioGroup radioGroup;
-
+    boolean checked;
 
     public void setRadioGroup(RadioGroup radioGroup){
         this.radioGroup = radioGroup;
@@ -17,7 +17,7 @@ public class Answer {
     }
 
     public Answer(String answer){
-        this.answer = answer;
+        this.answer = answer;checked = false;
     }
 
     public String getAnswer(){return answer;}
@@ -29,4 +29,8 @@ public class Answer {
         return answer;
     }
 
+
+    public boolean isChecked(){
+        return checked;
+    }
 }

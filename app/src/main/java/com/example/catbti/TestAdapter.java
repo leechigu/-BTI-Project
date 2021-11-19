@@ -16,6 +16,10 @@ public class TestAdapter extends BaseAdapter {
 
     public TestAdapter(List<Answer> data) {this.mData = data;}
 
+    public boolean isChecked(int position){
+        return mData.get(position).isChecked();
+
+    }
     @Override
     public int getCount() {
         return mData.size();
@@ -26,7 +30,6 @@ public class TestAdapter extends BaseAdapter {
         return mData.get(position);
     }
 
-
     @Override
     public long getItemId(int position) {
         return position;
@@ -35,17 +38,16 @@ public class TestAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.testlist, parent,false);
+        convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.testlist, parent,false);
 
         TextView answerText = convertView.findViewById(R.id.answer_text);
         RadioGroup radioGroup = convertView.findViewById(R.id.radioGroup);
         Answer answer = mData.get(position);
         answer.setRadioGroup(radioGroup);
-
         answerText.setText(answer.getAnswer());
-
-
         return convertView;
+
+
     }
 
 }

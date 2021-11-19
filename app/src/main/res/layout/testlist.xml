@@ -8,19 +8,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/answer_text"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:background="#000000"
-            android:textColor="#ffffff"
             android:fontFamily="@font/fontstyle"
-            android:textSize="40sp"
-            >
+            android:textColor="#ffffff"
+            android:textSize="25dp">
 
 
         </TextView>
@@ -30,6 +29,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#000000"
             android:orientation="horizontal">
 
             <RadioButton
@@ -37,56 +37,60 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+3" />
+                android:text="+3"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+2" />
+                android:text="+2"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="+1" />
+                android:text="+1"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0" />
+                android:text="0"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-1" />
+                android:text="-1"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-2" />
+                android:text="-2"
+                android:textColor="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/rb7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-3" />
+                android:text="-3"
+                android:textColor="#FFFFFF" />
         </RadioGroup>
 
 
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>
