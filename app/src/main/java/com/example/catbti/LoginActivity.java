@@ -1,5 +1,5 @@
 package com.example.catbti;
-
+/*
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -31,4 +31,4 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class LoginActivity extends AppCompatActivity {
 
-}
+}*/

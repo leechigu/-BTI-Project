@@ -27,6 +27,7 @@ public class TestMbti extends AppCompatActivity {
         ArrayList<Answer> data = new ArrayList<>();
 
 
+
         //총 질문은 16개로 설정하고 나중에 늘릴계획 지금거는 기본 질문
         data.add(new Answer("나는 집에서 노는 것보다 밖에서 노는게 더 재미있다."));
         data.add(new Answer("여행은 노는게 아니라 쉬는 것이라고 생각한다."));
