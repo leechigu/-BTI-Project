@@ -38,7 +38,6 @@ public class PostAdapter extends BaseAdapter {
             LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = li.inflate(R.layout.boardlist, parent, false);
         }
-
         TextView answerText = convertView.findViewById(R.id.answer_text);
         RadioGroup radioGroup = convertView.findViewById(R.id.radioGroup);
         Post post = mData.get(position);

@@ -40,22 +40,20 @@ public class ListActivity extends AppCompatActivity {
     private Button reg_button;
 
     protected void onCreate(Bundle savedInstanceState) {
-
-        final AppDatabase db = Room.databaseBuilder(this, AppDatabase.class, "registerContent-db")
-                .allowMainThreadQueries()
-                .build();
-
-        ArrayList<Post> data = (ArrayList<Post>) db.postDao().getAll();
-
-        ListAdapter adapter = new ListAdapter(data);
-        ListView listView = findViewById(R.id.list_view);
-        listView.setAdapter(adapter);
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
         Button reg_button = (Button) findViewById(R.id.reg_button);
+        AppDatabase db = AppDatabase.getAppDatabase(this);
+
+
+
+        List<Post> data =db.postDao().getAll();
+
+        ListAdapter adapter = new ListAdapter(data);
+        ListView listView = findViewById(R.id.list_lv);
+        listView.setAdapter(adapter);
+
         reg_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,14 +63,6 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-        //ListAdapter listAdapter = new ListAdapter(data);
-      //  ListView listView = findViewById(R.id.list_lv);
-        //listView.setAdapter(listAdapter);
 
 
     }

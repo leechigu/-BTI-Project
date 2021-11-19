@@ -37,10 +37,11 @@
             android:name=".ExplainMbti"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
             android:name=".SigninActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

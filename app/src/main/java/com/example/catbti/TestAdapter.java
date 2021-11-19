@@ -1,6 +1,6 @@
 package com.example.catbti;
 
-import android.content.Context;
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,14 +36,12 @@ public class TestAdapter extends BaseAdapter {
         return position;
     }
 
+
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Context c = parent.getContext();
-        if(convertView == null){
-            LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = li.inflate(R.layout.boardlist, parent, false);
-        }
 
+        convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.testlist, parent,false);
         TextView answerText = convertView.findViewById(R.id.answer_text);
         RadioGroup radioGroup = convertView.findViewById(R.id.radioGroup);
         Answer answer = mData.get(position);

@@ -4,21 +4,25 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
 @Entity
 public class Post {
-    @PrimaryKey()
-  //    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-  //  String ID = user.getEmail();
+    @PrimaryKey(autoGenerate = true)
+    private int postId;
+
     @NonNull
     private String title;
     private String content;
 
-    public Post(String title, String content){
+    public Post( String title, String content){
+
         this.title=title;
         this.content =content;
+    }
+    public void setPostId(int id){
+        this.postId = id;
+    }
+    public int getPostId(){
+        return postId;
     }
 
     public String getTitle() {

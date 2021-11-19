@@ -1,5 +1,6 @@
 package com.example.catbti;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,25 +36,20 @@ public class ListAdapter extends BaseAdapter {
         return position;
     }
 
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Context c = parent.getContext();
-        if(convertView == null){
-            LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = li.inflate(R.layout.boardlist, parent, false);
-        }
-        TextView boardText = convertView.findViewById(R.id.board_tv);
-
-        Post l = lists.get(position);
-
-        boardText.setText(l.getTitle());
-
+       convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.boardlist, parent,false);
+        //Context c = parent.getContext();
+       // if(convertView == null){
+           // LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+         // convertView = li.inflate(R.layout.boardlist, parent, false);
+     //   }
+        TextView postTitle = convertView.findViewById(R.id.board_tv);
+        Post post = lists.get(position);
+        postTitle.setText(post.getTitle().toString());
         return convertView;
     }
 
-    public void addList(String boardText){
-       // Post l = new Post();
-       // l.setTitle(boardText);
-    }
 
 }
