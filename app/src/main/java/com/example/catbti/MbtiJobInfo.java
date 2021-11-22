@@ -2,11 +2,13 @@ package com.example.catbti;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MbtiJobInfo extends AppCompatActivity {
 
@@ -17,7 +19,6 @@ public class MbtiJobInfo extends AppCompatActivity {
 
         final TextView title_mbti = (TextView)findViewById(R.id.txt1);
         final TextView info_txt = (TextView)findViewById(R.id.txt2);
-
 
 
         final Button job_btn1  = (Button)findViewById(R.id.btn17);
@@ -40,6 +41,19 @@ public class MbtiJobInfo extends AppCompatActivity {
         final Button btn_isfp  = (Button)findViewById(R.id.btn15);
         final Button btn_istp  = (Button)findViewById(R.id.btn16);
         final ImageView image_mbti  = (ImageView)findViewById(R.id.image_mbti);
+
+
+
+
+        Intent intent =null;
+
+
+
+
+
+
+
+
 
 
 
@@ -191,6 +205,65 @@ public class MbtiJobInfo extends AppCompatActivity {
                 image_mbti.setImageResource(R.drawable.istp);
             }
         });
+
+
+        intent =getIntent();
+        if(intent.hasExtra("mbti")){
+            String userMbti = null;
+            userMbti = intent.getExtras().getString("mbti");
+            int mbtiScores[] = new int[4];
+            mbtiScores = intent.getExtras().getIntArray("scores");
+            Toast.makeText(getApplicationContext(),"당신의 MBTI : "+userMbti,Toast.LENGTH_SHORT).show();
+            if(userMbti.equals("enfj")){
+                btn_enfj.performClick();
+            }
+            else if(userMbti.equals("entj")){
+                btn_entj.performClick();
+            }
+            else if(userMbti.equals("entp")){
+                btn_entp.performClick();
+            }
+            else if(userMbti.equals("enfp")){
+                btn_enfp.performClick();
+            }
+            else if(userMbti.equals("infj")){
+                btn_infj.performClick();
+            }
+            else if(userMbti.equals("intj")){
+                btn_intj.performClick();
+            }
+            else if(userMbti.equals("intp")){
+                btn_intp.performClick();
+            }
+            else if(userMbti.equals("infp")){
+                btn_infp.performClick();
+            }
+            else if(userMbti.equals("esfj")){
+                btn_esfj.performClick();
+            }
+            else if(userMbti.equals("estj")){
+                btn_estj.performClick();
+            }
+            else if(userMbti.equals("esfp")){
+                btn_esfp.performClick();
+            }
+            else if(userMbti.equals("estp")){
+                btn_estp.performClick();
+            }
+            else if(userMbti.equals("isfj")) {
+                btn_isfj.performClick();
+            }
+            else if(userMbti.equals("istj")){
+                btn_istj.performClick();
+            }
+            else if(userMbti.equals("isfp")){
+                btn_isfp.performClick();
+            }
+            else if(userMbti.equals("istp")){
+                btn_istp.performClick();
+            }
+
+        }
 
 
     }

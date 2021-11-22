@@ -59,7 +59,7 @@ public class TestMbti extends AppCompatActivity {
         finishbtn.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View view) {
-                String i_e;
+                String e_i;
                 String n_s;
                 String t_f;
                 String j_p;
@@ -90,25 +90,39 @@ public class TestMbti extends AppCompatActivity {
                     else if(rb.getText().equals("-1")){ score = -1; }
                     else if(rb.getText().equals("-2")){ score = -2; }
                     else if(rb.getText().equals("-3")){ score = -3; }
-                    if(i%2==0)
+                    if(i%2==1)
                         score *= -1;
                     //값 영역 지정
-                    if(i>=0&&i<4) sum_1+=score;
-                    else if(i>=4&&i<8) sum_2+=score;
-                    else if (i>=8&&i<12) sum_3+=score;
-                    else sum_4+=score;
+                    if(i>=0&&i<4)
+                        sum_1+=score;
+                    else if(i>=4&&i<8)
+                        sum_2+=score;
+                    else if (i>=8&&i<12)
+                        sum_3+=score;
+                    else
+                        sum_4+=score;
                 }
                 // 값을 통한 mbti 설정
-                if(sum_1>=0) i_e = "i";
-                else i_e = "e";
+                if(sum_1>=0) e_i = "e";
+                else e_i = "i";
                 if(sum_2>=0) n_s = "n";
                 else n_s = "s";
                 if(sum_3>=0) t_f = "t";
                 else t_f = "f";
                 if(sum_4>=0) j_p = "j";
                 else j_p = "p";
-                String mbti = i_e+n_s+t_f+j_p;
-                Toast.makeText(getApplicationContext(),"당신의 MBTI : "+mbti,Toast.LENGTH_SHORT).show();
+                String mbti = e_i+n_s+t_f+j_p;
+                int scores[] = new int[4];
+                scores[0] = sum_1;
+                scores[1] = sum_2;
+                scores[2] = sum_3;
+                scores[3] = sum_4;
+                Intent testFinishIntent = new Intent(TestMbti.this,MbtiJobInfo.class);
+
+                testFinishIntent.putExtra("mbti",mbti);
+                testFinishIntent.putExtra("scores",scores);
+                TestMbti.this.startActivity(testFinishIntent);
+                //점수를 환산해서 각 스펠링 별로 %도 표현...
 
             }
         });
