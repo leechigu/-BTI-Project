@@ -8,7 +8,7 @@ import androidx.room.Update;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 @Dao
 public interface PostDao {
     @Query("SELECT * FROM Post")
@@ -21,3 +21,4 @@ public interface PostDao {
     void deleteRC(Post post);
 
 }
+*/

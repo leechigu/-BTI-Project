@@ -1,6 +1,6 @@
 package com.example.catbti;
 
-
+/*
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
@@ -76,7 +76,7 @@ public class ListActivity extends AppCompatActivity {
 
 
     }
-
+*/
     /*
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 //    private String ID = user.getEmail();
@@ -255,5 +255,5 @@ public class ListActivity extends AppCompatActivity {
 
             return response;
         }
-    }*/
-}
+    }
+}*/

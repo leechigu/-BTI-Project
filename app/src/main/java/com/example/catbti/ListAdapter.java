@@ -1,13 +1,12 @@
 package com.example.catbti;
-
+/*
 import android.annotation.SuppressLint;
-import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ public class ListAdapter extends BaseAdapter {
     ArrayList<Post> lists;
 
 
-    public ListAdapter(List<Post> data) {this.lists= lists;}
+    public ListAdapter(List<Post> data) {this.lists= (ArrayList<Post>) data;}
 
     @Override
     public int getCount() {
@@ -36,15 +35,15 @@ public class ListAdapter extends BaseAdapter {
         return position;
     }
 
-    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-       convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.boardlist, parent,false);
         //Context c = parent.getContext();
-       // if(convertView == null){
-           // LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-         // convertView = li.inflate(R.layout.boardlist, parent, false);
-     //   }
+        convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.boardlist, parent,false);
+
+        // if(convertView == null){
+        // LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        // convertView = li.inflate(R.layout.boardlist, parent, false);
+        //   }
         TextView postTitle = convertView.findViewById(R.id.board_tv);
         Post post = lists.get(position);
         postTitle.setText(post.getTitle().toString());
@@ -52,4 +51,4 @@ public class ListAdapter extends BaseAdapter {
     }
 
 
-}
+}*/

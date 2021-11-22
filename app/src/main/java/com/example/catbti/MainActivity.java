@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         boardList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent boardListIntent = new Intent(MainActivity.this, ListActivity.class);
+                Intent boardListIntent = new Intent(MainActivity.this, PostActivity.class);
                 MainActivity.this.startActivity(boardListIntent);
 
             }

@@ -30,6 +30,7 @@
         android:layout_height="90dp"
         android:backgroundTint="#000000"
         android:text="검사하기"
+        android:textColor="#FFFDFD"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
