@@ -13,12 +13,16 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CommentActivity"
+            android:exported="true" />
+        <activity
             android:name=".PostActivity"
             android:exported="true" />
         <activity
             android:name=".MbtiJobInfo"
             android:exported="false" />
-    <!--    <activity
+        <!--
+    <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
@@ -26,7 +30,8 @@
             android:exported="true" />
         <activity
             android:name=".ListActivity"
-            android:exported="true" />  -->
+            android:exported="true" />
+        -->
         <activity
             android:name=".TestMbti"
             android:exported="true" />

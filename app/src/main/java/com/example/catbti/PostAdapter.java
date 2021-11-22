@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,6 +27,10 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     private ArrayList<PostItem> postItems;
     private Context mContext;
     private DBHelper mDBHelper;
+    private ArrayList<Comment> comments;
+    private CommentDBHelper mCommentDBHelper;
+    private CommentAdapter mCommentAdapter;
+
 
     public PostAdapter(ArrayList<PostItem> postItems, Context mContext) {
         this.postItems = postItems;
@@ -55,6 +61,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         private TextView tv_title;
         private TextView tv_content;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_title = itemView.findViewById(R.id.tv_title);
@@ -77,24 +84,30 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                                 dialog.setContentView(R.layout.activity_detail);
                                 TextView dtitle_tv = dialog.findViewById(R.id.dtitle_tv);
                                 TextView dcontent_tv = dialog.findViewById(R.id.dcontent_tv);
-                                Button back_button = dialog.findViewById(R.id.back_button);
 
-                                PostItem item = new PostItem();
-                                item.setTitle(dtitle_tv.getText().toString());
-                                item.setContent(dcontent_tv.getText().toString());
-                               // mAdapter.addItem(item);
-                                dialog.dismiss();
-                               /* back_button.setOnClickListener(new View.OnClickListener() {
+                                dtitle_tv.setText(postItem.getTitle());
+                                dcontent_tv.setText(postItem.getContent());
+
+                                Button comment_btn = dialog.findViewById(R.id.comment_btn);
+                                comment_btn.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
 
-
+                                        Intent intent = new Intent(mContext, CommentActivity.class);
+                                        mContext.startActivity(intent);
                                     }
-                                });*/
+                                });
+
+
+
+                                dialog.dismiss();
 
                                 dialog.show();
 
+
+
                             }
+
                         }
                     });
                     builder.show();

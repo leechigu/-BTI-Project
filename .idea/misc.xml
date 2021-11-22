@@ -7,7 +7,7 @@
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_.xml" value="0.2046875" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_board_detail.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_board_list.xml" value="0.2046875" />
-        <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_comment.xml" value="0.3515625" />
+        <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_comment.xml" value="0.25" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_detail.xml" value="0.196875" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_explain_mbti.xml" value="0.28804347826086957" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_join.xml" value="0.2171875" />
@@ -22,6 +22,8 @@
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_signin.xml" value="0.2" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_test_mbti.xml" value="0.2" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/boardlist.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/comment_register.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/commentlist.xml" value="0.2765625" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/custom_comment.xml" value="0.196875" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/testlist.xml" value="0.2755208333333333" />
       </map>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,74 +26,54 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:text="제목"/>
+                    android:text="제목" />
 
                 <TextView
                     android:id="@+id/dtitle_tv"
-                    android:padding="16dp"
-                    android:background="#eeeeee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:padding="16dp"
                     android:text="제목입니다."
-                    />
+                    android:textColor="#000000" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="내용"/>
+                android:text="내용" />
 
             <TextView
                 android:id="@+id/dcontent_tv"
-                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#eeeeee"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="내용입니다."
-                />
-
-            <TextView
                 android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="댓글"
-                />
+                android:text="내용입니다."
+                android:textColor="#000000" />
 
             <LinearLayout
                 android:id="@+id/comment_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:orientation="vertical"/>
+                android:orientation="vertical"
+                android:padding="8dp" />
         </LinearLayout>
     </ScrollView>
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:padding="8dp"
-        android:text="뒤로가기"/>
-    <!--
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/comment_et"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:layout_height="wrap_content"
-            android:background="#eeeeee"
-            android:layout_weight="1"
-            android:hint="댓글 내용을 입력하세요"/>
+
         <Button
-            android:id="@+id/reg_button"
+            android:id="@+id/comment_btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:padding="8dp"
-            android:text="등록하기"/>
-    </LinearLayout>-->
+            android:text="댓글"/>
+    </LinearLayout>
 </LinearLayout>
