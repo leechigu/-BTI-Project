@@ -26,6 +26,16 @@
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/commentlist.xml" value="0.2765625" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/custom_comment.xml" value="0.196875" />
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/testlist.xml" value="0.2755208333333333" />
+        <entry key="app/src/main/res/layout/activity_comment.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_explain_mbti.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_mbti_job_info.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_post.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/boardlist.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/comment_register.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/testlist.xml" value="0.24635416666666668" />
       </map>
     </option>
   </component>
