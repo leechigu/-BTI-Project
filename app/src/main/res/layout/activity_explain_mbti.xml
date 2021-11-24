@@ -4,69 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#EDEDE4"
 
     tools:context=".ExplainMbti">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="218dp"
-        android:layout_height="202dp"
-        android:alpha="0.7"
-        android:background="#FF000000"
+        android:id="@+id/characterGroup"
+        android:layout_width="327dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
-        app:srcCompat="@drawable/mbti_tf" />
-
-    <TextView
-        android:id="@+id/mbtiText"
-        android:layout_width="122dp"
-        android:layout_height="70dp"
-        android:fontFamily="@font/fontstyle"
-        android:gravity="center_horizontal"
-        android:text="MBTI"
-        android:textColor="#EDE38D"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.261" />
-
-    <TextView
-        android:id="@+id/ranText"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
-
-        android:gravity="bottom"
-        android:text="란?"
-        android:textColor="#FFFFFF"
-
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/mbtiText"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/group" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="261dp"
         android:layout_height="252dp"
-        android:gravity="clip_horizontal"
-        android:text="카를 융의 성격 유형 이론을 근거로 캐서린 쿡 브릭스와 이사벨 브릭스와 이사벨 마이어스가 제작한 심리 검사이다.\n\n\n MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:text="C.G.Jung의 심리유형론을 근거로 하여 Katharine Cook Briggs와 Isabel Brggs Myers가 보다 쉽고 일상생활에 유용하게 활용할 수 있도록 고안한 자기보고식 성격유형지표이다.\n\n\n MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
         android:textColor="#6E6A6A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.366" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <ImageView
+        android:id="@+id/glitter"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249"
+        app:srcCompat="@drawable/glitter" />
+
+    <TextView
+        android:id="@+id/mbtiText"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="324dp"
+        android:fontFamily="@font/darae_1minute"
+        android:gravity="center_horizontal"
+        android:text="MBTI"
+        android:textColor="#59041d"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="36dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/star1" />
+
+    <TextView
+        android:id="@+id/ranText"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/drfont_basic"
+        android:gravity="bottom"
+        android:text="란?"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mbtiText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
