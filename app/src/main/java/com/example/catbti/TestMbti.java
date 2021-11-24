@@ -34,11 +34,12 @@ public class TestMbti extends AppCompatActivity {
         data.add(new Answer("나는 학창시절에 주로 발표하는 것을 즐겼다."));
         data.add(new Answer("엘레베이터를 타면 구석쪽에 자리를 잡는다."));
         // i,e
-        data.add(new Answer("종종 초능력을 가지는 등의 비현실적인 상상을 한다. "));
         data.add(new Answer("새로운 무언가를 도전 하는 것이 두렵다. "));
-        data.add(new Answer("시를 읽으면 표현이 아름답다고 생각한다."));
+        data.add(new Answer("종종 초능력을 가지는 등의 비현실적인 상상을 한다. "));
         data.add(new Answer("내가 현실적인 사람이라고 생각한다."));
-        // n,s
+        data.add(new Answer("시를 읽으면 표현이 아름답다고 생각한다."));
+
+        // s,n
         data.add(new Answer("결과가 과정보다 중요하다고 생각한다."));
         data.add(new Answer("고민 상담시에 조언보다는 위로를 해주는 편이다."));
         data.add(new Answer("옳고 그름을 정하는 것은 중요하다고 생각한다."));
@@ -60,7 +61,7 @@ public class TestMbti extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String e_i;
-                String n_s;
+                String s_n;
                 String t_f;
                 String j_p;
                 int sum_1 = 0;
@@ -105,19 +106,19 @@ public class TestMbti extends AppCompatActivity {
                 // 값을 통한 mbti 설정
                 if(sum_1>=0) e_i = "e";
                 else e_i = "i";
-                if(sum_2>=0) n_s = "n";
-                else n_s = "s";
+                if(sum_2>=0) s_n = "s";
+                else s_n = "n";
                 if(sum_3>=0) t_f = "t";
                 else t_f = "f";
                 if(sum_4>=0) j_p = "j";
                 else j_p = "p";
-                String mbti = e_i+n_s+t_f+j_p;
+                String mbti = e_i+s_n+t_f+j_p;
                 int scores[] = new int[4];
                 scores[0] = sum_1;
                 scores[1] = sum_2;
                 scores[2] = sum_3;
                 scores[3] = sum_4;
-                Intent testFinishIntent = new Intent(TestMbti.this,MbtiJobInfo.class);
+                Intent testFinishIntent = new Intent(TestMbti.this,mbti_job_info_test_popup.class);
 
                 testFinishIntent.putExtra("mbti",mbti);
                 testFinishIntent.putExtra("scores",scores);

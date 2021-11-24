@@ -20,7 +20,6 @@ public class MbtiJobInfo extends AppCompatActivity {
         final TextView title_mbti = (TextView)findViewById(R.id.txt1);
         final TextView info_txt = (TextView)findViewById(R.id.txt2);
 
-
         final Button job_btn1  = (Button)findViewById(R.id.btn17);
         final Button job_btn2  = (Button)findViewById(R.id.btn17);
 
@@ -40,23 +39,10 @@ public class MbtiJobInfo extends AppCompatActivity {
         final Button btn_istj  = (Button)findViewById(R.id.btn14);
         final Button btn_isfp  = (Button)findViewById(R.id.btn15);
         final Button btn_istp  = (Button)findViewById(R.id.btn16);
+
         final ImageView image_mbti  = (ImageView)findViewById(R.id.image_mbti);
 
-
-
-
         Intent intent =null;
-
-
-
-
-
-
-
-
-
-
-
 
         btn_enfj.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -206,14 +192,34 @@ public class MbtiJobInfo extends AppCompatActivity {
             }
         });
 
+        job_btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String jobName = job_btn1.getText().toString();
+                Intent job1Intent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
+                job1Intent.putExtra("mbti",title_mbti.getText().toString());
+                job1Intent.putExtra("job",jobName);
+                MbtiJobInfo.this.startActivity(job1Intent);
+            }
+        });
+        job_btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String jobName = job_btn2.getText().toString();
+                Intent job2Intent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
+                job2Intent.putExtra("mbti",title_mbti.getText().toString());
+                job2Intent.putExtra("jobName",jobName);
+                MbtiJobInfo.this.startActivity(job2Intent);
+
+            }
+        });
+
 
         intent =getIntent();
         if(intent.hasExtra("mbti")){
             String userMbti = null;
             userMbti = intent.getExtras().getString("mbti");
-            int mbtiScores[] = new int[4];
-            mbtiScores = intent.getExtras().getIntArray("scores");
-            Toast.makeText(getApplicationContext(),"당신의 MBTI : "+userMbti,Toast.LENGTH_SHORT).show();
+
             if(userMbti.equals("enfj")){
                 btn_enfj.performClick();
             }

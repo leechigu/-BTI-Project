@@ -13,6 +13,14 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".mbti_job_info_test_popup"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false" />
+        <activity
+            android:name=".mbti_job_info_popup"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false" />
+        <activity
             android:name=".CommentActivity"
             android:exported="true" />
         <activity
