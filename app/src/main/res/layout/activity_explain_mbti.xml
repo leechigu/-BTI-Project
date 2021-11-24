@@ -61,7 +61,7 @@
         android:gravity="clip_horizontal"
         android:text="카를 융의 성격 유형 이론을 근거로
         캐서린 쿡 브릭스와 이사벨 브릭스와 이사벨 마이어스가 제작한 심리 검사이다.\n\n\n
-        MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
+MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
         android:textColor="#6E6A6A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

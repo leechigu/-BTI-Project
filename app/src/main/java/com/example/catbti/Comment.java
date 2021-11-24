@@ -3,6 +3,7 @@ package com.example.catbti;
 public class Comment {
     private int commentNum;
     private String commentContent;
+    private String commentMbti;
 
     public Comment(){
 
@@ -22,5 +23,13 @@ public class Comment {
 
     public void setCommentContent(String commentContent) {
         this.commentContent = commentContent;
+    }
+
+    public String getCommentMbti() {
+        return commentMbti;
+    }
+
+    public void setCommentMbti(String commentMbti) {
+        this.commentMbti = commentMbti;
     }
 }

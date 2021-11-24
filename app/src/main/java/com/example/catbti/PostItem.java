@@ -4,7 +4,7 @@ public class PostItem {
     private int postNum;
     private String title;
     private String content;
-
+    private String mbti;
     public PostItem(){
 
     }
@@ -31,5 +31,13 @@ public class PostItem {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getMbti() {
+        return mbti;
+    }
+
+    public void setMbti(String mbti) {
+        this.mbti = mbti;
     }
 }

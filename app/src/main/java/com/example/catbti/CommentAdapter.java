@@ -24,9 +24,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
 
     public CommentAdapter(ArrayList<Comment> comments, Context mContext) {
+
         this.comments = comments;
         this.mContext = mContext;
-        mDBHelper = new DBHelper(mContext);
+        mCommentDBHelper = new CommentDBHelper(mContext);
+
     }
 
 
@@ -42,6 +44,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull CommentAdapter.ViewHolder holder, int position) {
         holder.tv_comment.setText(comments.get(position).getCommentContent());
+        holder.tv_mbti.setText(comments.get(position).getCommentMbti());
     }
 
     @Override
@@ -52,50 +55,15 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView tv_comment;
+        private TextView tv_mbti;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             tv_comment = itemView.findViewById(R.id.tv_comment);
-/*
-            itemView.setOnClickListener(new View.OnClickListener() {
-               @Override
-                public void onClick(View view) {
-                    int curPos = getAdapterPosition(); //현재 리스트 아이템 위치
-                    Comment comment = comments.get(curPos);
-                    String[] strChoiceItems = {"댓글 보기"};
-                    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-                    builder.setItems(strChoiceItems, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            //댓글 보기
-                            if (i==0){
+            tv_mbti = itemView.findViewById(R.id.tv_mbti);
 
-                                Dialog dialog = new Dialog(mContext, android.R.style.Theme_Material_Light_Dialog);
-                                dialog.setContentView(R.layout.activity_comment);
-
-                                TextView comment_tv = dialog.findViewById(R.id.tv_comment);
-
-                                comment_tv.setText(comment.getCommentContent());
-
-
-
-
-
-                                dialog.dismiss();
-
-                                dialog.show();
-
-
-
-                            }
-                        }
-                    });
-                    builder.show();
-
-                }
-            }); */
         }
 
     }

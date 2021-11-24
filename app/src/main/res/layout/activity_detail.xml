@@ -39,6 +39,27 @@
                     android:textColor="#000000" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="MBTI" />
+
+                <TextView
+                    android:id="@+id/dmbti_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:padding="16dp"
+                    android:text="MBTI."
+                    android:textColor="#000000" />
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

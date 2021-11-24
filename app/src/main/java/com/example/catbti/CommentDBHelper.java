@@ -11,7 +11,9 @@ import java.util.ArrayList;
 
 public class CommentDBHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "comment.db";
+    private static final String DB_NAME = "comment.db3";
+
+
 
     public CommentDBHelper(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -19,7 +21,7 @@ public class CommentDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS Comment (commentNum INTEGER PRIMARY KEY AUTOINCREMENT, commentContent TEXT NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Comment (commentNum INTEGER , commentContent TEXT NOT NULL, commentMbti TEXT NOT NULL)");
     }
 
     @Override
@@ -32,17 +34,17 @@ public class CommentDBHelper extends SQLiteOpenHelper {
         ArrayList<Comment> comments = new ArrayList<>();
 
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM Comment ORDER BY commentNum DESC", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM Comment ORDER BY commentNum DESC ", null);
         if(cursor.getCount() != 0){
             while(cursor.moveToNext()){
+
                 int commentNum = cursor.getInt(cursor.getColumnIndexOrThrow("commentNum"));
-
                 String commentContent = cursor.getString(cursor.getColumnIndexOrThrow("commentContent"));
-
+                String commentMbti = cursor.getString(cursor.getColumnIndexOrThrow("commentMbti"));
                 Comment comment = new Comment();
                 comment.setCommentNum(commentNum);
                 comment.setCommentContent(commentContent);
-
+                comment.setCommentMbti(commentMbti);
                 comments.add(comment);
             }
         }
@@ -51,9 +53,9 @@ public class CommentDBHelper extends SQLiteOpenHelper {
         return comments;
     }
 
-    public void InsertComment(String _content){
+    public void InsertComment(int _commentNum, String _content, String _mbti){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT INTO Comment (commentContent) VALUES('" +_content+"');");
+        db.execSQL("INSERT INTO Comment (commentNum,commentContent, commentMbti) VALUES('" +_commentNum+"','" +_content+"','" +_mbti+"');");
     }
 /*
     public void UpdatePost(String _title, String _content, int _postNum){

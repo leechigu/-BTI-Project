@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
-
+    private int pNum;
     private ArrayList<PostItem> postItems;
     private Context mContext;
     private DBHelper mDBHelper;
@@ -31,6 +31,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     private CommentDBHelper mCommentDBHelper;
     private CommentAdapter mCommentAdapter;
 
+    public int getpNum() {
+        return pNum;
+    }
+
+    public void setpNum(int pNum) {
+        this.pNum = pNum;
+    }
 
     public PostAdapter(ArrayList<PostItem> postItems, Context mContext) {
         this.postItems = postItems;
@@ -50,6 +57,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull PostAdapter.ViewHolder holder, int position) {
         holder.tv_title.setText(postItems.get(position).getTitle());
         holder.tv_content.setText(postItems.get(position).getContent());
+        holder.tv_mbti.setText(postItems.get(position).getMbti());
     }
 
     @Override
@@ -60,13 +68,14 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView tv_title;
         private TextView tv_content;
+        private TextView tv_mbti;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_title = itemView.findViewById(R.id.tv_title);
             tv_content = itemView.findViewById(R.id.tv_content);
-
+            tv_mbti = itemView.findViewById(R.id.tv_mbti);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -84,17 +93,24 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                                 dialog.setContentView(R.layout.activity_detail);
                                 TextView dtitle_tv = dialog.findViewById(R.id.dtitle_tv);
                                 TextView dcontent_tv = dialog.findViewById(R.id.dcontent_tv);
+                                TextView dmbti_tv = dialog.findViewById(R.id.dmbti_tv);
+
+
 
                                 dtitle_tv.setText(postItem.getTitle());
                                 dcontent_tv.setText(postItem.getContent());
+                                dmbti_tv.setText(postItem.getMbti());
+
 
                                 Button comment_btn = dialog.findViewById(R.id.comment_btn);
                                 comment_btn.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-
+                                        int postNum = postItem.getPostNum();
                                         Intent intent = new Intent(mContext, CommentActivity.class);
+                                        intent.putExtra("postNum",postNum);
                                         mContext.startActivity(intent);
+
                                     }
                                 });
 

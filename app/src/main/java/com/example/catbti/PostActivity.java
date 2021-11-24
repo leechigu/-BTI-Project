@@ -52,18 +52,20 @@ public class PostActivity extends AppCompatActivity {
                 dialog.setContentView(R.layout.activity_register);
                 EditText title_et = dialog.findViewById(R.id.title_et);
                 EditText content_et = dialog.findViewById(R.id.content_et);
+                EditText mbti_et = dialog.findViewById(R.id.mbti_et);
                 Button reg_button = dialog.findViewById(R.id.reg_button);
 
                 reg_button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         //insert db
-                        mDBHelper.InsertPost(title_et.getText().toString(), content_et.getText().toString());
+                        mDBHelper.InsertPost(title_et.getText().toString(), content_et.getText().toString(), mbti_et.getText().toString());
 
                         //insert UI
                         PostItem item = new PostItem();
                         item.setTitle(title_et.getText().toString());
                         item.setContent(content_et.getText().toString());
+                        item.setMbti(mbti_et.getText().toString());
 
                         mAdapter.addItem(item);
                         rv_post.smoothScrollToPosition(0);

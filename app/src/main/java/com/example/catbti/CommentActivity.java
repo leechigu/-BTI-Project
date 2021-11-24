@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,11 +22,27 @@ public class CommentActivity extends AppCompatActivity {
     private ArrayList<Comment> comments;
     private CommentDBHelper mCommentDBHelper;
     private CommentAdapter mCommentAdapter;
+    private ArrayList<PostItem> postItems;
+
+    PostAdapter postAdapter;
+    int postN;
+
+    public int getPostN() {
+        return postN;
+    }
+
+    public void setPostN(int postN) {
+        this.postN = postN;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
+
+        Intent intent  =getIntent();
+        setPostN(intent.getExtras().getInt("postNum"));
+
 
         setInit();
 
@@ -49,24 +66,29 @@ public class CommentActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //팝업 창
                 Dialog dialog = new Dialog(CommentActivity.this, android.R.style.Theme_Material_Light_Dialog);
-                dialog.setContentView(R.layout.comment_register);EditText title_et = dialog.findViewById(R.id.title_et);
+                dialog.setContentView(R.layout.comment_register);
+                //EditText title_et = dialog.findViewById(R.id.title_et);
                 EditText et_comment = dialog.findViewById(R.id.et_comment);
+                EditText et_mbti = dialog.findViewById(R.id.et_mbti);
                 Button reg_button = dialog.findViewById(R.id.reg_comment_btn);
 
                 reg_button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         //insert db
-                        mCommentDBHelper.InsertComment(et_comment.getText().toString());
+
+                        mCommentDBHelper.InsertComment(getPostN() ,et_comment.getText().toString(),et_mbti.getText().toString());
 
                         //insert UI
                         Comment item = new Comment();
+                        //if (getPostN() == item.getCommentNum())
                         item.setCommentContent(et_comment.getText().toString());
-
+                        item.setCommentMbti(et_comment.getText().toString());
                         mCommentAdapter.addItem(item);
+
                         rv_comment.smoothScrollToPosition(0);
                         dialog.dismiss();
-                        Toast.makeText(CommentActivity.this,"게시물 작성 완료", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CommentActivity.this,"댓글 작성 완료", Toast.LENGTH_SHORT).show();
                     }
                 });
 
