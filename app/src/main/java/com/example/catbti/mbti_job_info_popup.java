@@ -40,15 +40,5 @@ public class mbti_job_info_popup extends Activity {
 
 
 
-
-
-
-
-
-
-
-
-
-
     }
 }
