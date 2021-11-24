@@ -10,16 +10,17 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="303dp"
-        android:layout_height="226dp"
+        android:layout_width="218dp"
+        android:layout_height="202dp"
         android:alpha="0.7"
         android:background="#FF000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
-        app:srcCompat="@drawable/mbtiimage" />
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/mbti_tf" />
 
     <TextView
         android:id="@+id/mbtiText"
@@ -56,12 +57,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="215dp"
-        android:layout_height="250dp"
+        android:layout_width="261dp"
+        android:layout_height="252dp"
         android:gravity="clip_horizontal"
-        android:text="카를 융의 성격 유형 이론을 근거로
-        캐서린 쿡 브릭스와 이사벨 브릭스와 이사벨 마이어스가 제작한 심리 검사이다.\n\n\n
-MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
+        android:text="카를 융의 성격 유형 이론을 근거로 캐서린 쿡 브릭스와 이사벨 브릭스와 이사벨 마이어스가 제작한 심리 검사이다.\n\n\n MBTI검사는 내향성 또는 외향성,\n 감각 또는 직관, 사고 또는 느낌, 판단 또는 지각 네 가지 범주를 지정하고 있다."
         android:textColor="#6E6A6A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
