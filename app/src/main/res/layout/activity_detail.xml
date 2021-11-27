@@ -94,7 +94,8 @@
             android:id="@+id/comment_btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="#719382"
             android:padding="8dp"
-            android:text="댓글"/>
+            android:text="댓글" />
     </LinearLayout>
 </LinearLayout>

@@ -31,16 +31,20 @@
             android:layout_width="match_parent"
             android:layout_height="424dp"
             android:background="@drawable/popuptextview"
-            android:backgroundTint="#FFFFFF"
+
             android:text="TextView"
             android:textColor="#000000" />
+
 
         <Button
             android:id="@+id/testPopupCloseBtn"
             style="@style/FirebaseUI.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#03A9F4"
+            android:background="#CC7161"
+            android:textColor="#FFFFFF"
             android:text="닫기" />
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
