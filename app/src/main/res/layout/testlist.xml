@@ -19,7 +19,6 @@
             android:background="#EDEDE4"
             android:fontFamily="@font/jua"
             android:gravity="center"
-            android:src="@drawable/highligter2"
             android:textColor="#000000"
             android:textSize="17dp">
 
