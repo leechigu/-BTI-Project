@@ -24,17 +24,27 @@
             android:background="@drawable/popuptextview"
             android:gravity="center"
             android:text="TextView"
+            android:textSize="15sp"
+            android:fontFamily="@font/jua"
             android:textColor="#000000" />
+
+
+        <ImageView
+            android:id="@+id/jobMBTIImage"
+            android:layout_width="334dp"
+            android:layout_height="140dp"
+            android:src="@drawable/enfj_job" />
 
         <TextView
             android:id="@+id/testIText"
             android:layout_width="match_parent"
-            android:layout_height="424dp"
+            android:layout_height="276dp"
             android:background="@drawable/popuptextview"
-
             android:text="TextView"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="20dp"
             android:textColor="#000000" />
-
 
         <Button
             android:id="@+id/testPopupCloseBtn"
@@ -44,6 +54,8 @@
             android:background="#CC7161"
             android:textColor="#FFFFFF"
             android:text="닫기" />
+
+
 
     </LinearLayout>
 
