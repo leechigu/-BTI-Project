@@ -26,8 +26,8 @@ public class mbti_job_info_popup extends Activity {
         titleText.setText(" "+mbti+"와 어울리는 직업 : "+jobName);
 
 
-        if(jobName.equals("교사")){
-            String teacher = " 선생님직업의 특성은....";
+        if(jobName.equals("통계학자")){
+            String teacher = " 통계학자의 특성은....";
             jobInfoText.setText(teacher);
         }
 

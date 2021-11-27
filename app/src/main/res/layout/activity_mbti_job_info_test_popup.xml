@@ -20,7 +20,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            app:srcCompat="@drawable/mbtimain" />
+            android:background="#EDEDE4"
+            android:src="@drawable/catbti"/>
 
         <TextView
             android:id="@+id/testpopTitleText"
@@ -60,7 +61,7 @@
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/popuptextview"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#EDEDE4"
                 android:text="TextView"
                 android:gravity="center"
                 android:textColor="#000000" />
@@ -183,7 +184,7 @@
                 style="@style/FirebaseUI.Button"
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
-                android:background="#004A6C"
+                android:background="#CC7161"
                 android:text="검사완료"
                 android:textColor="#FFFFFF"
                 tools:ignore="TextContrastCheck" />
@@ -193,7 +194,7 @@
                 style="@style/FirebaseUI.Button"
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
-                android:background="#03A9F4"
+                android:background="#E5AC8E"
                 android:text="닫기"
                 android:textColor="#FFFFFF"
                 tools:ignore="TextContrastCheck" />
@@ -201,6 +202,8 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,13 +42,12 @@
 
         <EditText
             android:id="@+id/mbti_et"
-            android:padding="16dp"
-            android:background="#eeeeee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#eeeeee"
             android:hint="MBTI를 입력하세요."
-            />
+            android:padding="16dp" />
     </LinearLayout>
     <TextView
         android:id="@+id/content_tv"
