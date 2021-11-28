@@ -32,7 +32,7 @@ public class FunCommentDBHelper extends SQLiteOpenHelper {
     public ArrayList<FunComment> getPostCommentList(int postNum) {
         ArrayList<FunComment> funComments = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
-        String temp = "SELECT * FROM FunComment WHERE funPostNum = %d ORDER BY commentNum DESC ";
+        String temp = "SELECT * FROM FunComment WHERE funPostNum = %d ORDER BY funCommentNum DESC ";
         String fmt = String.format(temp,postNum);
         Cursor cursor = db.rawQuery(fmt, null);
         if (cursor.getCount() != 0) {
