@@ -57,7 +57,7 @@ public class FunCommentDBHelper extends SQLiteOpenHelper {
 
     public void InsertComment(int funPostNum,String obj,String mbti) {
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT INTO Comment (funPostNum,funCommentObj,funCommentMbti) VALUES('"+funPostNum+"','"+obj+"','"+mbti+"');");
+        db.execSQL("INSERT INTO Comment (funPostNum,funCommentObj,funCommentMbti VALUES('"+funPostNum+"','"+obj+"','"+mbti+"');");
        // db.execSQL("INSERT INTO FunPost (funPostTitle,funPostC VALUES('" +title+"','" +contents+"','" +obj1+"','"+obj2+"');");
     }
 

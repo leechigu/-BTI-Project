@@ -30,7 +30,7 @@ public class mbti_job_info_popup extends Activity {
         String jobName = intent.getStringExtra("jobName");
         titleText.setText(" "+mbti+"와 어울리는 직업 : "+jobName);
 
-        String link = "https://www.smu.ac.kr/ko/intro.do";
+
 
 
         if(jobName.equals("CEO")){
