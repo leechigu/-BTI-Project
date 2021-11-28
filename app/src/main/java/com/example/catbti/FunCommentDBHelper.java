@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class FunCommentDBHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "funcomment.db";
+    private static final String DB_NAME = "funcomment.db3";
 
 
     public FunCommentDBHelper(@Nullable Context context) {
@@ -57,8 +57,8 @@ public class FunCommentDBHelper extends SQLiteOpenHelper {
 
     public void InsertComment(int funPostNum,String obj,String mbti) {
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT INTO Comment (funPostNum,funCommentObj,funCommentMbti VALUES('"+funPostNum+"','"+obj+"','"+mbti+"');");
-       // db.execSQL("INSERT INTO FunPost (funPostTitle,funPostC VALUES('" +title+"','" +contents+"','" +obj1+"','"+obj2+"');");
+        db.execSQL("INSERT INTO FunComment (funPostNum,funCommentObj,funCommentMbti) VALUES('"+funPostNum+"','"+obj+"','"+mbti+"');");
+
     }
 
 }

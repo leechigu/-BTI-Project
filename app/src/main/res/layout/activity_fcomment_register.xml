@@ -5,33 +5,42 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="MBTI와 체크박스를 채워주세요"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/mbti_btn"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MBTI"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/registerMbti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="MBTI" />
-
-        <TextView
-            android:id="@+id/mbti_tv"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="MBTI" />
-
-
+            android:ems="10"
+            android:hint="MBTI를 입력해주세요."
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
-
-
     <LinearLayout
-        android:layout_width="383dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
         <CheckBox
@@ -39,7 +48,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:minHeight="48dp"
             android:text="CheckBox"
             android:textSize="20dp" />
 
@@ -56,7 +64,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:minHeight="48dp"
             android:text="CheckBox"
             android:textSize="20dp" />
 
