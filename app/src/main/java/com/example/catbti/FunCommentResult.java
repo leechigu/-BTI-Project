@@ -56,10 +56,15 @@ public class FunCommentResult extends AppCompatActivity {
         TextView istj2 = findViewById(R.id.istj2);TextView istp2 = findViewById(R.id.istp2);
 
 
+        TextView objtext1 = findViewById(R.id.resObj1);
+        TextView objtext2 = findViewById(R.id.resObj2);
+        objtext2.setText(obj2);
+        objtext1.setText(obj1);
+
         fComments = fCommentDBHelper.getPostCommentList(postNum);
 
         for(int i = 0 ;i<fComments.size();i++){
-            if(fComments.get(i).getFCommentMbti().equals("enfj")){
+            if(fComments.get(i).getFCommentMbti().equals("ENFJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[0]++;
                 }
@@ -67,7 +72,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[0]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("entp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ENTP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[1]++;
                 }
@@ -75,7 +80,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[1]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("enfp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ENFP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[2]++;
                 }
@@ -84,7 +89,7 @@ public class FunCommentResult extends AppCompatActivity {
                 }
 
             }
-            else if(fComments.get(i).getFCommentMbti().equals("entj")){
+            else if(fComments.get(i).getFCommentMbti().equals("ENTJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[3]++;
                 }
@@ -92,7 +97,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[3]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("infj")){
+            else if(fComments.get(i).getFCommentMbti().equals("INFJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[4]++;
                 }
@@ -100,7 +105,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[4]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("intj")){
+            else if(fComments.get(i).getFCommentMbti().equals("INTJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[5]++;
                 }
@@ -108,7 +113,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[5]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("intp")){
+            else if(fComments.get(i).getFCommentMbti().equals("INTP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[6]++;
                 }
@@ -116,7 +121,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[6]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("infp")){
+            else if(fComments.get(i).getFCommentMbti().equals("INFP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[7]++;
                 }
@@ -124,7 +129,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[7]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("esfj")){
+            else if(fComments.get(i).getFCommentMbti().equals("ESFJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[8]++;
                 }
@@ -132,7 +137,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[8]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("estj")){
+            else if(fComments.get(i).getFCommentMbti().equals("ESTJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[9]++;
                 }
@@ -140,7 +145,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[9]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("esfp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ESFP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[10]++;
                 }
@@ -148,7 +153,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[10]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("estp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ESTP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[11]++;
                 }
@@ -156,7 +161,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[11]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("isfj")) {
+            else if(fComments.get(i).getFCommentMbti().equals("ISFJ")) {
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[12]++;
                 }
@@ -164,7 +169,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[12]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("isfp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ISFP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[13]++;
                 }
@@ -172,7 +177,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[13]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("istj")){
+            else if(fComments.get(i).getFCommentMbti().equals("ISTJ")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[14]++;
                 }
@@ -180,7 +185,7 @@ public class FunCommentResult extends AppCompatActivity {
                     mbtiarr2[14]++;
                 }
             }
-            else if(fComments.get(i).getFCommentMbti().equals("istp")){
+            else if(fComments.get(i).getFCommentMbti().equals("ISTP")){
                 if(fComments.get(i).getCommentObj().equals(obj1)){
                     mbtiarr1[15]++;
                 }
@@ -190,22 +195,22 @@ public class FunCommentResult extends AppCompatActivity {
             }
         }
 
-        enfj1.setText(mbtiarr1[0]);enfj2.setText(mbtiarr2[0]);
-        entp1.setText(mbtiarr1[1]);entp2.setText(mbtiarr2[1]);
-        enfp1.setText(mbtiarr1[2]);enfp2.setText(mbtiarr2[2]);
-        entj1.setText(mbtiarr1[3]);entj2.setText(mbtiarr2[3]);
-        infj1.setText(mbtiarr1[4]);infj2.setText(mbtiarr2[4]);
-        intj1.setText(mbtiarr1[5]);intj2.setText(mbtiarr2[5]);
-        intp1.setText(mbtiarr1[6]);intp2.setText(mbtiarr2[6]);
-        infp1.setText(mbtiarr1[7]);infp2.setText(mbtiarr2[7]);
-        esfj1.setText(mbtiarr1[8]);esfj2.setText(mbtiarr2[8]);
-        estj1.setText(mbtiarr1[9]);estj2.setText(mbtiarr2[9]);
-        esfp1.setText(mbtiarr1[10]);esfp2.setText(mbtiarr2[10]);
-        estp1.setText(mbtiarr1[11]);estp2.setText(mbtiarr2[11]);
-        isfj1.setText(mbtiarr1[12]);isfj2.setText(mbtiarr2[12]);
-        isfp1.setText(mbtiarr1[13]);isfp2.setText(mbtiarr2[13]);
-        istj1.setText(mbtiarr1[14]);istj2.setText(mbtiarr2[14]);
-        istp1.setText(mbtiarr1[15]);istp2.setText(mbtiarr2[15]);
+        enfj1.setText(String.valueOf(mbtiarr1[0]));enfj2.setText(String.valueOf(mbtiarr2[0]));
+        entp1.setText(String.valueOf(mbtiarr1[1]));entp2.setText(String.valueOf(mbtiarr2[1]));
+        enfp1.setText(String.valueOf(mbtiarr1[2]));enfp2.setText(String.valueOf(mbtiarr2[2]));
+        entj1.setText(String.valueOf(mbtiarr1[3]));entj2.setText(String.valueOf(mbtiarr2[3]));
+        infj1.setText(String.valueOf(mbtiarr1[4]));infj2.setText(String.valueOf(mbtiarr2[4]));
+        intj1.setText(String.valueOf(mbtiarr1[5]));intj2.setText(String.valueOf(mbtiarr2[5]));
+        intp1.setText(String.valueOf(mbtiarr1[6]));intp2.setText(String.valueOf(mbtiarr2[6]));
+        infp1.setText(String.valueOf(mbtiarr1[7]));infp2.setText(String.valueOf(mbtiarr2[7]));
+        esfj1.setText(String.valueOf(mbtiarr1[8]));esfj2.setText(String.valueOf(mbtiarr2[8]));
+        estj1.setText(String.valueOf(mbtiarr1[9]));estj2.setText(String.valueOf(mbtiarr2[9]));
+        esfp1.setText(String.valueOf(mbtiarr1[10]));esfp2.setText(String.valueOf(mbtiarr2[10]));
+        estp1.setText(String.valueOf(mbtiarr1[11]));estp2.setText(String.valueOf(mbtiarr2[11]));
+        isfj1.setText(String.valueOf(mbtiarr1[12]));isfj2.setText(String.valueOf(mbtiarr2[12]));
+        isfp1.setText(String.valueOf(mbtiarr1[13]));isfp2.setText(String.valueOf(mbtiarr2[13]));
+        istj1.setText(String.valueOf(mbtiarr1[14]));istj2.setText(String.valueOf(mbtiarr2[14]));
+        istp1.setText(String.valueOf(mbtiarr1[15]));istp2.setText(String.valueOf(mbtiarr2[15]));
 
 
     }
