@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="335dp"
-        android:layout_height="532dp"
+        android:layout_height="550dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,11 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:background="@drawable/popuptextview"
+            android:fontFamily="@font/jua"
             android:gravity="center"
             android:text="TextView"
-            android:textSize="15sp"
-            android:fontFamily="@font/jua"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="15sp" />
 
 
         <ImageView
@@ -38,23 +38,31 @@
         <TextView
             android:id="@+id/testIText"
             android:layout_width="match_parent"
-            android:layout_height="276dp"
+            android:layout_height="260dp"
             android:background="@drawable/popuptextview"
-            android:text="TextView"
-            android:textAlignment="center"
             android:gravity="center"
             android:padding="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
             android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/jobLinkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#719382"
+            android:textColor="#FFFFFF"
+            android:text="관련학과페이지 이동" />
 
         <Button
             android:id="@+id/testPopupCloseBtn"
             style="@style/FirebaseUI.Button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:background="#CC7161"
+            android:text="닫기"
             android:textColor="#FFFFFF"
-            android:text="닫기" />
-
+            tools:ignore="TextContrastCheck" />
 
 
     </LinearLayout>

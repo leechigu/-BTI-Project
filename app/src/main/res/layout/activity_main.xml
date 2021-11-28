@@ -94,7 +94,7 @@
     <Button
         android:id="@+id/boardButton"
         android:layout_width="82dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#EDEDE4"
         android:fontFamily="@font/jua"
@@ -128,10 +128,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.962" />
 
+    <ImageView
+        android:id="@+id/redstar"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"
+        app:srcCompat="@drawable/redstar" />
+
     <Button
         android:id="@+id/mbtiButton"
         android:layout_width="110dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#EDEDE4"
         android:fontFamily="@font/jua"
@@ -149,7 +161,7 @@
     <Button
         android:id="@+id/mbtiJobButton"
         android:layout_width="140dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#EDEDE4"
         android:fontFamily="@font/jua"
@@ -163,6 +175,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.877" />
+
+    <ImageView
+        android:id="@+id/yellowstar"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@drawable/yellowstar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331"
+        app:srcCompat="@drawable/orangestar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

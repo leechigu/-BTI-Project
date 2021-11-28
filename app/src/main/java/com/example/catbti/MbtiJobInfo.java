@@ -140,7 +140,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESFJ");
                 info_txt.setText("마음이 따뜻하고, 양심적이며, 협조적이다. 일상생활에서 타인들의 필요를 잘 알아패며, 그것을 제공하기 위해 노력한다.");
-                job_btn1.setText("승무원");
+                job_btn1.setText("경영 컨설턴트");
                 job_btn2.setText("특수 교사");
                 image_mbti.setImageResource(R.drawable.esfj);
             }
@@ -151,7 +151,7 @@ public class MbtiJobInfo extends AppCompatActivity {
             public void onClick(View view) {
                 title_mbti.setText("ESTJ");
                 info_txt.setText("구체적이고, 현실적이며, 사실적이다. 결정을 하고자하고, 결정된 것들을 이행하기 위해 빠르게 움직인다.");
-                job_btn1.setText("판사");
+                job_btn1.setText("감독관");
                 job_btn2.setText("교사");
                 image_mbti.setImageResource(R.drawable.estj);
             }
