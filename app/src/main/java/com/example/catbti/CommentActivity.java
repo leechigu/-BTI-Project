@@ -26,7 +26,7 @@ public class CommentActivity extends AppCompatActivity {
     private CommentDBHelper mCommentDBHelper;
     private CommentAdapter mCommentAdapter;
     private ArrayList<PostItem> postItems;
-    String a;
+    private String a;
 
     public String getA() {
         return a;

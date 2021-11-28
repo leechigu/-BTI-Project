@@ -25,7 +25,7 @@ public class PostActivity extends AppCompatActivity {
     private DBHelper mDBHelper;
     private PostAdapter mAdapter;
 
-    String s;
+    private String s;
 
     public String getS() {
         return s;

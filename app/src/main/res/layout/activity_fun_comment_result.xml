@@ -4,6 +4,614 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".FunCommentResult">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="질문1"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:text="질문2"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ENFJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/enfj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/enfj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ENTP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/entp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/entp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ENFP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/enfp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/enfp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ENTJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/entj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/entj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="INFJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/infj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/infj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="INTJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/intj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/intj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="INTP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/intp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/intp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="INFP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/infp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/infp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ESFJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/esfj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/esfj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ESTJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/estj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/estj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ESFP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/esfp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/esfp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ESTP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/estp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/estp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ISFJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/isfj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/isfj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ISFP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/isfp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/isfp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ISTJ"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/istj1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/istj2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="ISTP"
+                android:gravity="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/istp1"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/istp2"
+                android:layout_width="130dp"
+                android:layout_height="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

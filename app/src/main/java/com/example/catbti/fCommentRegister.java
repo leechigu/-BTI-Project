@@ -1,11 +1,14 @@
 package com.example.catbti;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +16,15 @@ import androidx.appcompat.app.AppCompatActivity;
 public class fCommentRegister extends AppCompatActivity {
 
     private FunCommentDBHelper fCommentDBHelper;
+    private String s;
 
+    public String getS() {
+        return s;
+    }
+
+    public void setS(String s) {
+        this.s = s;
+    }
 
     int postN;
 
@@ -36,8 +47,41 @@ public class fCommentRegister extends AppCompatActivity {
 
         CheckBox obj1 = findViewById(R.id.registerObj1);
         CheckBox obj2 = findViewById(R.id.registerObj2);
-        EditText mbti = findViewById(R.id.registerMbti);
+        Button mbti_btn = findViewById(R.id.mbti_btn);
+        TextView mbti_tv = findViewById(R.id.mbti_tv);
         Button regBtn = findViewById(R.id.fcommentregbtn);
+
+        mbti_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String[] listItems = {"ENFJ", "ENTJ", "ENTP", "ENFP", "INFJ","INTJ","INTP", "INFP", "ESFJ", "ESTJ","ESFP", "ESTP","ISFJ", "ISTJ", "ISFP", "INTP"};
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(fCommentRegister.this);
+                builder.setTitle("MBTI를 선택하세요.");
+
+                int checkedItem = 0; //this will checked the item when user open the dialog
+                builder.setSingleChoiceItems(listItems, checkedItem, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(fCommentRegister.this, listItems[which], Toast.LENGTH_SHORT).show();
+                        setS(listItems[which]);
+                        mbti_tv.setText(getS());
+                    }
+                });
+
+                builder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
 
         Intent intent = getIntent();
         int postnum = intent.getExtras().getInt("postNum");
@@ -54,8 +98,8 @@ public class fCommentRegister extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String mb = mbti.getText().toString();
-                if(mbti.getText()==null){
+                String mb = getS();
+                if(getS()==null){
                     Toast.makeText( fCommentRegister.this, "빈칸을 채워주세요" , Toast.LENGTH_SHORT).show();
                     return;
                 }
