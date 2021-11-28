@@ -42,8 +42,6 @@ public class MbtiJobInfo extends AppCompatActivity {
 
         final ImageView image_mbti  = (ImageView)findViewById(R.id.image_mbti);
 
-
-
         Intent intent =null;
 
         btn_enfj.setOnClickListener(new View.OnClickListener() {

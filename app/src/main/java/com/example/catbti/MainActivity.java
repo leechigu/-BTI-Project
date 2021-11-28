@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button mbtiJobButton = findViewById(R.id.mbtiJobButton);
-
+        Button mbtifPostBtn = findViewById(R.id.mbtiFPostBtn);
         Button explainMbti = (Button) findViewById(R.id.mbtiButton);
         explainMbti.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
+            }
+        });
+        mbtifPostBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent fpostIntent = new Intent(MainActivity.this,MbtiFunPost.class);
+                MainActivity.this.startActivity(fpostIntent);
             }
         });
 

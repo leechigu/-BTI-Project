@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -52,7 +51,7 @@ public class TestMbti extends AppCompatActivity {
         // j,p
 
         TestAdapter adapter = new TestAdapter(data);
-        ListView listView = findViewById(R.id.list_view);
+        ListView listView = findViewById(R.id.funPostListView);
         listView.setAdapter(adapter);
 
 

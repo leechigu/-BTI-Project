@@ -107,7 +107,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <Button
@@ -174,7 +175,27 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.877"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/mbtiFPostBtn"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#EDEDE4"
+        android:fontFamily="@font/jua"
+        android:gravity="center"
+        android:text="MBTI 밸런스 게임"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/yellowstar"

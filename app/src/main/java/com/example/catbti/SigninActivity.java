@@ -85,7 +85,6 @@ public class SigninActivity extends AppCompatActivity implements GoogleApiClient
                             intent.putExtra("nickName",account.getDisplayName());
                             intent.putExtra("photoUrl", String.valueOf(account.getPhotoUrl()));
 
-
                             startActivity(intent);
 
                         }else{
@@ -95,7 +94,6 @@ public class SigninActivity extends AppCompatActivity implements GoogleApiClient
                 });
 
     }
-
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 

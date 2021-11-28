@@ -13,13 +13,28 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".mbti_job_info_test_popup"
-            android:theme="@android:style/Theme.Dialog"
+            android:name=".fCommentRegister"
             android:exported="false" />
         <activity
-            android:name=".mbti_job_info_popup"
-            android:theme="@android:style/Theme.Dialog"
+            android:name=".FunCommentResult"
             android:exported="false" />
+        <activity
+            android:name=".fcommentlist"
+            android:exported="false" />
+        <activity
+            android:name=".fpostDetail"
+            android:exported="false" />
+        <activity
+            android:name=".MbtiFunPost"
+            android:exported="false" />
+        <activity
+            android:name=".mbti_job_info_test_popup"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".mbti_job_info_popup"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".CommentActivity"
             android:exported="true" />

@@ -15,11 +15,20 @@
 
     </style>
 
-    <style name="popupTheme" parent = "@style/Theme.AppCompat.NoActionBar">
+    <style name="popupTheme" parent="@style/Theme.AppCompat.NoActionBar">
 
         <item name="android:windowBackground">@color/popupColor</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

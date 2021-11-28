@@ -9,7 +9,7 @@
     tools:context=".TestMbti">
 
     <ListView
-        android:id="@+id/list_view"
+        android:id="@+id/funPostListView"
         android:layout_width="409dp"
         android:layout_height="571dp"
         android:background="#EDEDE4"
