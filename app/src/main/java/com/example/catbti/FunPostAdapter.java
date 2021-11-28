@@ -115,7 +115,7 @@ public class FunPostAdapter extends RecyclerView.Adapter<FunPostAdapter.ViewHold
                                 fcommentresultBtn.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        Intent fcresIntent = new Intent(mContext,  fCommentRegister.class);
+                                        Intent fcresIntent = new Intent(mContext,FunCommentResult.class);
                                         fcresIntent.putExtra("res_postNum",fpost.getPostNum());
                                         fcresIntent.putExtra("res_obj1",fpost.getObj1());
                                         fcresIntent.putExtra("res_obj2",fpost.getObj2());

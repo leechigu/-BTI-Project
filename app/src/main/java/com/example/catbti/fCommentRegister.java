@@ -116,6 +116,7 @@ public class fCommentRegister extends AppCompatActivity {
                 else if(obj2.isChecked()){
                     fCommentDBHelper.InsertComment(postnum,ob2,mb);
                     Toast.makeText( fCommentRegister.this, "댓글 추가 완료" , Toast.LENGTH_SHORT).show();
+                    finish();
                     return;
                 }
             }
