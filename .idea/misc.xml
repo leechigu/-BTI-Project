@@ -28,6 +28,8 @@
         <entry key="..\:/Users/dbghk/AndroidStudioProjects/catBTI/app/src/main/res/layout/testlist.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/lech3.xml" value="0.16018518518518518" />
+        <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/lechgu2.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/leechigu.xml" value="0.2520833333333333" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/drawable/popuptextview.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_comment.xml" value="0.2390625" />
@@ -37,7 +39,7 @@
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fcomment_register.xml" value="0.33" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fcomment_register_popup.xml" value="0.4119791666666667" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fpost_detail.xml" value="0.25" />
-        <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fun_comment_result.xml" value="0.25" />
+        <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fun_comment_result.xml" value="0.33" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fun_post_list.xml" value="0.2390625" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_fun_post_register_pop_up.xml" value="0.33" />
         <entry key="..\:/Users/rrww2/AndroidStudioProjects/catBTI/app/src/main/res/layout/activity_join.xml" value="0.415625" />
