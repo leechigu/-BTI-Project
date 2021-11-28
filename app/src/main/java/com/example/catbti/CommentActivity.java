@@ -3,12 +3,15 @@ package com.example.catbti;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -23,6 +26,15 @@ public class CommentActivity extends AppCompatActivity {
     private CommentDBHelper mCommentDBHelper;
     private CommentAdapter mCommentAdapter;
     private ArrayList<PostItem> postItems;
+    String a;
+
+    public String getA() {
+        return a;
+    }
+
+    public void setA(String a) {
+        this.a = a;
+    }
 
     PostAdapter postAdapter;
     int postN;
@@ -67,9 +79,42 @@ public class CommentActivity extends AppCompatActivity {
                 //팝업 창
                 Dialog dialog = new Dialog(CommentActivity.this, android.R.style.Theme_Material_Light_Dialog);
                 dialog.setContentView(R.layout.comment_register);
+                TextView mbti_tv = dialog.findViewById(R.id.mbti_tv);
+                Button mbti_btn = dialog.findViewById(R.id.mbti_btn);
+                mbti_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String[] listItems = {"ENFJ", "ENTJ", "ENTP", "ENFP", "INFJ","INTJ","INTP", "INFP", "ESFJ", "ESTJ","ESFP", "ESTP","ISFJ", "ISTJ", "ISFP", "INTP"};
+
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(CommentActivity.this);
+                        builder.setTitle("MBTI를 선택하세요.");
+
+                        int checkedItem = 0; //this will checked the item when user open the dialog
+                        builder.setSingleChoiceItems(listItems, checkedItem, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(CommentActivity.this, listItems[which], Toast.LENGTH_SHORT).show();
+                                setA(listItems[which]);
+                                mbti_tv.setText(getA());
+                            }
+                        });
+
+                        builder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.dismiss();
+                            }
+                        });
+
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
+                    }
+                });
                 //EditText title_et = dialog.findViewById(R.id.title_et);
                 EditText et_comment = dialog.findViewById(R.id.et_comment);
-                EditText et_mbti = dialog.findViewById(R.id.et_mbti);
+
                 Button reg_button = dialog.findViewById(R.id.reg_comment_btn);
 
                 reg_button.setOnClickListener(new View.OnClickListener() {
@@ -77,13 +122,13 @@ public class CommentActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         //insert db
 
-                        mCommentDBHelper.InsertComment(getPostN() ,et_comment.getText().toString(),et_mbti.getText().toString());
+                        mCommentDBHelper.InsertComment(getPostN() ,et_comment.getText().toString(),getA());
 
                         //insert UI
                         Comment item = new Comment();
-                        //if (getPostN() == item.getCommentNum())
+
                         item.setCommentContent(et_comment.getText().toString());
-                        item.setCommentMbti(et_comment.getText().toString());
+                        item.setCommentMbti(getA());
                         mCommentAdapter.addItem(item);
 
                         rv_comment.smoothScrollToPosition(0);
@@ -99,7 +144,7 @@ public class CommentActivity extends AppCompatActivity {
     }
     //저장되어있던 db를 가져옴
     private void loadRecentDB() {
-        comments = mCommentDBHelper.getCommentList();
+        comments = mCommentDBHelper.getCommentList(getPostN());
         if(mCommentAdapter == null){
             mCommentAdapter = new CommentAdapter(comments, this);
             rv_comment.setHasFixedSize(true);

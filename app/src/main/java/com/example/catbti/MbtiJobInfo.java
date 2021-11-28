@@ -228,24 +228,24 @@ public class MbtiJobInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String jobName = job_btn1.getText().toString();
-                Intent job1Intent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
-                job1Intent.putExtra("mbti",title_mbti.getText().toString());
-                job1Intent.putExtra("job",jobName);
-                MbtiJobInfo.this.startActivity(job1Intent);
+                Intent jobIntent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
+                jobIntent.putExtra("mbti",title_mbti.getText().toString());
+                jobIntent.putExtra("jobName",jobName);
+                MbtiJobInfo.this.startActivity(jobIntent);
             }
         });
+
         job_btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String jobName = job_btn2.getText().toString();
-                Intent job2Intent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
-                job2Intent.putExtra("mbti",title_mbti.getText().toString());
-                job2Intent.putExtra("jobName",jobName);
-                MbtiJobInfo.this.startActivity(job2Intent);
+                Intent jobIntent = new Intent(MbtiJobInfo.this, mbti_job_info_popup.class);
+                jobIntent.putExtra("mbti",title_mbti.getText().toString());
+                jobIntent.putExtra("jobName",jobName);
+                MbtiJobInfo.this.startActivity(jobIntent);
 
             }
         });
-
 
         intent =getIntent();
         if(intent.hasExtra("mbti")){
