@@ -26,8 +26,9 @@
 
                 <TextView
                     android:layout_width="100dp"
-                    android:background="@drawable/leechigu"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/leechigu"
+                    android:gravity="center"
                     android:padding="16dp"
                     android:text="제목" />
 
@@ -51,6 +52,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/leechigu"
+                    android:gravity="center"
                     android:padding="16dp"
                     android:text="내용" />
 
@@ -68,12 +70,13 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/lech3"
                 android:gravity="center"
+                android:text="TextView"
                 android:textColor="#000000"
                 android:textSize="20dp"
-                android:text="Balance Game!" />
-
+                tools:text="MBTI 밸런스 게임" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,21 +85,23 @@
 
                 <TextView
                     android:id="@+id/fCommentObj1"
-                    android:gravity="center"
-                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="@drawable/leechigu"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#000000" />
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:gravity="center"
                     android:id="@+id/fCommentObj2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:background="@drawable/leechigu"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#000000" />
             </LinearLayout>
 
             <LinearLayout
@@ -108,16 +113,18 @@
                     android:id="@+id/fcomment_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/leechigu"
                     android:layout_weight="1"
-                    android:text="선택하기" />
+                    android:background="@drawable/fui_idp_button_background_twitter"
+                    android:gravity="center"
+                    android:text="등록하기" />
 
                 <Button
                     android:id="@+id/fcommentresultBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/leechigu"
+                    android:background="@drawable/fui_idp_button_background_phone"
+                    android:gravity="center"
                     android:text="결과보기" />
             </LinearLayout>
 
