@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class CommentDBHelper extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "comment.db3";
+    private static final String DB_NAME = "comment.db4";
 
 
 
@@ -21,7 +21,7 @@ public class CommentDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS Comment (commentNum INTEGER , commentContent TEXT NOT NULL, commentMbti TEXT NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Comment (commentNum INTEGER PRIMARY KEY AUTOINCREMENT , commentContent TEXT NOT NULL, commentMbti TEXT NOT NULL)");
     }
 
     @Override

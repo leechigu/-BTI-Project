@@ -48,12 +48,13 @@
 
 
     <Button
+        android:backgroundTint="#59041d"
         android:id="@+id/reg_comment_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:text="등록하기"
-        android:textColor="#000000" />
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>

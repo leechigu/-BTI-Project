@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="obj1"
+            android:hint="A 선택지"
             android:inputType="textPersonName" />
 
         <TextView
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="obj2"
+            android:hint="B 선택지"
             android:inputType="textPersonName"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>

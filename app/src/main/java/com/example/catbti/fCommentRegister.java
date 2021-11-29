@@ -100,7 +100,7 @@ public class fCommentRegister extends AppCompatActivity {
             public void onClick(View view) {
                 String mb = getS();
                 if(getS()==null){
-                    Toast.makeText( fCommentRegister.this, "빈칸을 채워주세요" , Toast.LENGTH_SHORT).show();
+                    Toast.makeText( fCommentRegister.this, "MBTI를 입력해주세요" , Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -110,12 +110,13 @@ public class fCommentRegister extends AppCompatActivity {
                 }
                 if(obj1.isChecked()){
                     fCommentDBHelper.InsertComment(postnum,ob1,mb);
-                    Toast.makeText( fCommentRegister.this, "댓글 추가 완료" , Toast.LENGTH_SHORT).show();
+                    Toast.makeText( fCommentRegister.this, "투표 완료" , Toast.LENGTH_SHORT).show();
+                    finish();
                     return;
                 }
                 else if(obj2.isChecked()){
                     fCommentDBHelper.InsertComment(postnum,ob2,mb);
-                    Toast.makeText( fCommentRegister.this, "댓글 추가 완료" , Toast.LENGTH_SHORT).show();
+                    Toast.makeText( fCommentRegister.this, "투표 완료" , Toast.LENGTH_SHORT).show();
                     finish();
                     return;
                 }
