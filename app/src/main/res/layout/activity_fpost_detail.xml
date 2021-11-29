@@ -12,11 +12,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/leechigu"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
@@ -28,6 +30,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/leechigu"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:padding="16dp"
                     android:text="제목" />
@@ -35,9 +38,10 @@
                 <TextView
                     android:id="@+id/dfposttitle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#eeeeee"
+                    android:background="@drawable/lechgu2"
+                    android:fontFamily="@font/jua"
                     android:padding="16dp"
                     android:text="제목입니다."
                     android:textColor="#000000" />
@@ -52,6 +56,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/leechigu"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:padding="16dp"
                     android:text="내용" />
@@ -60,23 +65,25 @@
                     android:id="@+id/dfpostContents"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#eeeeee"
+                    android:background="@drawable/lechgu2"
+                    android:fontFamily="@font/jua"
                     android:padding="16dp"
                     android:text="내용입니다."
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/lech3"
+                android:layout_height="56dp"
+                android:background="#edede4"
+                android:fontFamily="@font/jua"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="MBTI 밸런스 게임"
                 android:textColor="#000000"
-                android:textSize="20dp"
-                tools:text="MBTI 밸런스 게임" />
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,20 +92,22 @@
 
                 <TextView
                     android:id="@+id/fCommentObj1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/leechigu"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:text="TextView"
                     android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/fCommentObj2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/leechigu"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:text="TextView"
                     android:textColor="#000000" />
@@ -111,19 +120,21 @@
 
                 <Button
                     android:id="@+id/fcomment_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fui_idp_button_background_twitter"
+                    android:background="#eaaf8d"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:text="등록하기" />
 
                 <Button
                     android:id="@+id/fcommentresultBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/fui_idp_button_background_phone"
+                    android:background="#d1d9aa"
+                    android:fontFamily="@font/jua"
                     android:gravity="center"
                     android:text="결과보기" />
             </LinearLayout>

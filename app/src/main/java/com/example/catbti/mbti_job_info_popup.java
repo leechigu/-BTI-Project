@@ -99,6 +99,7 @@ public class mbti_job_info_popup extends Activity {
         else if(jobName.equals("경영 컨설턴트")){
             String consultant = " 경영 컨설턴트의 특징은 유동성, 계획성, 호기심입니다. 뛰어난 통찰력을 가지고 있는 "+mbti+"의 여러분들은  시대의 변화에 따라 유동적으로 생각을 할 수 있고 높은 계획성으로 기업의 미래 경영을 만들어 나갈 수 있습니다. 또한 뛰어난 호기심으로 얻은 지식을 자신의 것으로 만들어 내 새로운 경영 방법을 생각해 낼 수 있는 능력을 가지고 있기 때문에 “경영 컨설턴트”라는 직업을 추천 드립니다.";
             jobInfoText.setText(consultant);
+            imageJobMBTI.setImageResource(R.drawable.entj_job2);
             link = "https://smubiz.smu.ac.kr/smubiz/index.do";
         }
 
